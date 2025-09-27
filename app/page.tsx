@@ -1,7 +1,8 @@
 function Home() {
   return (
-   <div>
-    <h1>Hello</h1>
+   <div className="header-nav">
+      <div className="app-title"></div>
+      <div className="dev-name"></div>
    </div>
   );
 }
