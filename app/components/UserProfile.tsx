@@ -19,7 +19,6 @@ function UserProfile() {
     let dobYear = dob.date.slice(0,4)
     let dateFormat = `${dobMonth}-${dobDay}-${dobYear}`
     
-
     return (
         <>
           <p>Name: {name.first} {name.last}</p>

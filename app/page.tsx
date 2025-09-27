@@ -10,13 +10,14 @@ function Home() {
   return (
    <>
     <div className="header-nav">
-        <div className="app-title"></div>
-        <div className="dev-name"></div>
+        <div className="app-title">Towson Student Randomize</div>
+        <div className="dev-name">Denzel Mabilangan</div>
+    </div>
 
         <QueryClientProvider client = {queryClient}>
           <UserProfile />
         </QueryClientProvider>
-      </div>
+
    </>
   );
 }
