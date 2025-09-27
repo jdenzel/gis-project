@@ -18,8 +18,6 @@ function Home() {
         </QueryClientProvider>
       </div>
    </>
-
-   
   );
 }
 

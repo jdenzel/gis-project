@@ -7,11 +7,19 @@ function UserProfile() {
     queryFn: getUsers
   })
 
-  return ( 
+  if(!data){
+    alert("Data is null")
+  } else {
+  const {name, location, email, phone, dob, picture } = data.results[0];
+
+  return (
     <>
+    <p>Name: {name.first} {name.last}</p>
     <h1>{JSON.stringify(data)}</h1>
     </>
-  );
+  );  
+  }
+  
 }
 
 const getUsers = async () => {
@@ -20,6 +28,4 @@ const getUsers = async () => {
   }
  
 export default UserProfile;
-
-
 

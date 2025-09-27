@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Home from "./page";
 
 export const metadata: Metadata = {
   title: "GIS Project",
@@ -14,8 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
-      <Home />
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
