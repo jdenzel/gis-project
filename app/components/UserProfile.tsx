@@ -17,7 +17,7 @@ function UserProfile() {
   return (
     <>
     <p>Name: {name.first} {name.last}</p>
-    <p>Address: {location.street.number} {location.street.number}</p>
+    <p>Address: {location.street.number} {location.street.name} {location.city} {location.state} {location.postcode}</p>
     <p>Email: {email}</p>
     <p>Phone Number: {phone}</p>
     <p>Date of Birth: {dob.date}</p>
