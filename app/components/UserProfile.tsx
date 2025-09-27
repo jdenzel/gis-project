@@ -1,3 +1,4 @@
+import "../styles.css/UserProfile.css"
 import { useQuery } from "@tanstack/react-query";
 
 function UserProfile() {
@@ -20,18 +21,35 @@ function UserProfile() {
     let dateFormat = `${dobMonth}-${dobDay}-${dobYear}`
     
     return (
-        <>
-          <p>Name: {name.first} {name.last}</p>
-          <p>Address: {location.street.number} {location.street.name} {location.city} {location.state} {location.postcode}</p>
-          <p>Email: {email}</p>
-          <p>Phone Number: {phone}</p>
-          <p>Date of Birth: {dateFormat}</p>
-          <span>
-            <img src={picture.large} />
-          </span>
+        <div className="profile-section">
+          <div className="profile-box">
+            <div className="profile-left">
+              <img src={picture.large} />
+            </div>
+              
+            <div className="profile-right">
+              <div className="profile-info">
+                <h3 className="info-title">Name</h3>
+                <p>{name.first} {name.last}</p>
 
-          <button onClick={() => refetch()}>Fetch</button>
-        </>
+                <h3 className="info-title">Address</h3>
+
+                <p>{location.street.number} {location.street.name} {location.city} {location.state} {location.postcode}</p>
+                <h3 className="info-title">Email:</h3>
+
+                <p>{email}</p>
+
+                <h3 className="info-title">Phone Number</h3>
+                <p>{phone}</p>
+
+                <h3 className="info-title">Date of Birth</h3>
+                <p>{dateFormat}</p>
+              </div>
+            </div>
+            <button className="btn" onClick={() => refetch()}>Fetch New User</button>
+            
+          </div>
+        </div>
       );  
     }
   }
@@ -42,4 +60,3 @@ const getUsers = async () => {
   }
  
 export default UserProfile;
-

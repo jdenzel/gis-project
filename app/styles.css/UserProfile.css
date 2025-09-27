@@ -1,0 +1,53 @@
+.profile-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  
+}
+
+.profile-box {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 10px;
+  box-shadow: 13px 22px 28px 0 rgba(0,0,0,.33)
+}
+
+.info-title {
+  color: #fb0;
+}
+
+.profile-left {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-left img {
+  width: 250px;
+  height: 250px;
+}
+
+.profile-right {
+  background-color: black;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 300px;
+  height: 450px;;
+}
+
+.btn {
+  position: absolute;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px; 
+  align-self: center;
+  background-color: #fb0;
+  color: black;
+  bottom: 30px;
+  left: 70px;
+}
