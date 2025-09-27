@@ -4,7 +4,9 @@ function UserProfile() {
 
   const {data} = useQuery({
     queryKey: ['users'],
-    queryFn: getUsers
+    queryFn: getUsers,
+    refetchOnWindowFocus: false,
+
   })
 
   if(!data){
@@ -15,11 +17,16 @@ function UserProfile() {
   return (
     <>
     <p>Name: {name.first} {name.last}</p>
-    <h1>{JSON.stringify(data)}</h1>
+    <p>Address: {location.street.number} {location.street.number}</p>
+    <p>Email: {email}</p>
+    <p>Phone Number: {phone}</p>
+    <p>Date of Birth: {dob.date}</p>
+    <span>
+      <img src={picture.large} />
+    </span>
     </>
   );  
   }
-  
 }
 
 const getUsers = async () => {
