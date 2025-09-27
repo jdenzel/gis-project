@@ -2,35 +2,38 @@ import { useQuery } from "@tanstack/react-query";
 
 function UserProfile() {
 
-  const {data, refetch} = useQuery({
+  const {data, isLoading, refetch} = useQuery({
     queryKey: ['users'],
     queryFn: getUsers,
     refetchOnWindowFocus: false,
 
   })
 
-  if(!data){
-    alert("Data is null")
+  if(isLoading) {
+    <p>Loading...</p>
   } else {
-  const {name, location, email, phone, dob, picture } = data.results[0];
 
-  return (
-    <>
-      <p>Name: {name.first} {name.last}</p>
-      <p>Address: {location.street.number} {location.street.name} {location.city} {location.state} {location.postcode}</p>
-      <p>Email: {email}</p>
-      <p>Phone Number: {phone}</p>
-      <p>Date of Birth: {dob.date}</p>
-      <span>
-        <img src={picture.large} />
-      </span>
+    const {name, location, email, phone, dob, picture } = data.results[0];
 
-      <button onClick={() => refetch()}>Fetch</button>
+    return (
+        <>
+          <p>Name: {name.first} {name.last}</p>
+          <p>Address: {location.street.number} {location.street.name} {location.city} {location.state} {location.postcode}</p>
+          <p>Email: {email}</p>
+          <p>Phone Number: {phone}</p>
+          <p>Date of Birth: {dob.date}</p>
+          <span>
+            <img src={picture.large} />
+          </span>
 
-    </>
-  );  
+          <button onClick={() => refetch()}>Fetch</button>
+
+        </>
+      );  
+    }
   }
-}
+
+
 
 const getUsers = async () => {
     const response = await fetch("https://randomuser.me/api")
