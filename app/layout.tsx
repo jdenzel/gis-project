@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-
-const queryClient = new QueryClient();
+import Home from "./page";
 
 export const metadata: Metadata = {
   title: "GIS Project",
@@ -16,11 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <QueryClientProvider client = {queryClient}>
-        {children}
-        </QueryClientProvider>
-      </body>
+      
+      <Home />
     </html>
   );
 }
