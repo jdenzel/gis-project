@@ -27,11 +27,11 @@ h2 {
 h3 {
   font-family: var(--kandal-book);
   font-weight: 700;
-  font-size: 25px;
+  font-size: 22px;
   margin-bottom: 5px;
 }
 p {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
   margin-bottom: 20px;
 }

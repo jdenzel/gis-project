@@ -32,7 +32,10 @@
   width: auto;
   height: 250px;
   border: 2px solid var(--gold-accent);
+  transition: 0.3s ease;
 }
+
+
 
 .profile-right {
   background-color: var(--gold-accent);
@@ -52,9 +55,9 @@
 }
 
 .profile-info {
-  padding: 40px 15px;
+  padding: 40px 15px 0px 15px;
   height: 100%;
-  border: 5px solid var(--dark-accent)
+  border: 5px solid var(--dark-accent);
 }
 
 .profile-info h3 {
@@ -62,7 +65,7 @@
 }
 
 .profile-info p {
-  margin: 0px 0px 25px 10px;
+  margin: 0px 0px 25px 15px;
   color: var(--dark-accent);
 }
 
@@ -96,7 +99,7 @@
 
 .btn:hover {
   background-color: black;
-  color: var(--gold-accent)
+  color: var(--gold-accent);
 }
 
 .bg-img {
@@ -124,10 +127,6 @@
 
   .btn {
     position: unset;
-  }
-
-  .bg-img {
-    /* display: none; */
   }
 }
 

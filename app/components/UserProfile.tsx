@@ -2,6 +2,7 @@ import "../styles/UserProfile.css"
 import { useQuery } from "@tanstack/react-query";
 import tigertoothgm from "../lib/images/tigertooth-gm.png";
 import Image from "next/image";
+import Loader from "./Loader";
 
 function UserProfile() {
 
@@ -9,11 +10,10 @@ function UserProfile() {
     queryKey: ['users'],
     queryFn: getUsers,
     refetchOnWindowFocus: false,
-
   })
 
   if(isLoading) {
-    <p>Loading...</p>
+      <Loader />
   } else {
 
     const {name, location, email, phone, dob, picture } = data.results[0];
@@ -56,7 +56,6 @@ function UserProfile() {
             
           </div>
           <Image className="bg-img" src={tigertoothgm} alt="Tigertooth" width={1600} height={1000}/>
-          {/* <Image className="bg-img" src={tigertoothgm} alt="Tigertooth" fill={true} objectFit="cover"/> */}
         </div>
       </div>
       );  
@@ -64,8 +63,9 @@ function UserProfile() {
   }
 
 const getUsers = async () => {
-    const response = await fetch("https://randomuser.me/api")
-    return await response.json()
+    // await new Promise((resolve) => setTimeout(resolve, 2000));
+    const response = await fetch("https://randomuser.me/api");
+    return await response.json();
   }
  
 export default UserProfile;
