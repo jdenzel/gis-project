@@ -62,11 +62,10 @@
 
 .profile-info p {
   margin: 0px 0px 25px 10px;
-  
+  color: var(--dark-accent);
 }
 
 .info-title {
-  font-family: var(--kandal-book);
   color: var(--text-color);
   display: inline-block;
 }

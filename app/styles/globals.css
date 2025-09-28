@@ -11,7 +11,7 @@
 body {
   background: var(--background);
   color: white;
-  font-family: var(--proxima-nova);
+  font-family: var(--proxima-nova), sans-serif;
   margin: 0;
 }
 
@@ -25,8 +25,9 @@ h2 {
   font-weight: 600;
 }
 h3 {
+  font-family: var(--kandal-book);
+  font-weight: 700;
   font-size: 25px;
-  font-weight: 500;
   margin-bottom: 5px;
 }
 p {

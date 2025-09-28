@@ -9,18 +9,17 @@ export const metadata: Metadata = {
 
 const ProximaNova = localFont({
   src: [
-    {
-      path: "./lib/fonts/ProximaNova.ttf",
-    }
+    { path: "./lib/fonts/ProximaNova.ttf", weight: "400"},
+    { path: "./lib/fonts/ProximaNovaSemiBold.ttf", weight: "600" },
+    { path: "./lib/fonts/ProximaNovaBold.ttf", weight: "700" },
   ],
   variable: "--proxima-nova",
 });
 
 const KandalBook = localFont({
   src: [
-    {
-      path: "./lib/fonts/KandalBook.ttf",
-    }
+    { path: "./lib/fonts/KandalBook.ttf", weight: "400"},
+    { path: "./lib/fonts/KandalBookBold.ttf", weight: "700" },
   ],
   variable: "--kandal-book",
 });
