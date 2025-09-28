@@ -22,7 +22,7 @@ Then run the development environment:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) and you'll be able to use the app!
+Open [http://localhost:3000](http://localhost:3000) in your browser and you'll be able to use the app!
 
 ---
 

@@ -5,7 +5,7 @@ import "../styles/Loader.css"
 
 function Loader() {
 
-    const lottieDefault = {
+    const lottieDefault = { // Lottie animation default settings
       animationData: tigerLottie,
       loop: true,
       style: {

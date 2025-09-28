@@ -10,9 +10,7 @@ import Image from "next/image";
 
 function Home() {
 
-  const queryClient = new QueryClient();
-
-  
+  const queryClient = new QueryClient(); 
 
   return (
    <>
@@ -28,7 +26,7 @@ function Home() {
         </div>
     </div>
 
-        <QueryClientProvider client = {queryClient}>
+        <QueryClientProvider client = {queryClient}> 
             <UserProfile />
         </QueryClientProvider>
 

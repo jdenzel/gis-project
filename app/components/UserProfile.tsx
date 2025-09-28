@@ -8,19 +8,19 @@ function UserProfile() {
 
   const {data, isFetching, refetch} = useQuery({
     queryKey: ['users'],
-    queryFn: getUsers,
+    queryFn: getUsers, // getUsers function called
     refetchOnWindowFocus: false,
   })
 
-  if(isFetching) {
-      return <Loader />
+  if(isFetching) { 
+      return <Loader /> // If fetch is in progress show loading component to indicate fetch is loading
   } else {
 
-    const {name, location, email, phone, dob, picture } = data.results[0];
+    const {name, location, email, phone, dob, picture } = data.results[0]; // destructuring data
     let dobMonth = dob.date.slice(5,7)
     let dobDay = dob.date.slice(8,10)
     let dobYear = dob.date.slice(0,4)
-    let dateFormat = `${dobMonth}-${dobDay}-${dobYear}`
+    let dateFormat = `${dobMonth}-${dobDay}-${dobYear}` // Formats year
     
     return (
       <div className="profile-container">
@@ -63,12 +63,12 @@ function UserProfile() {
   }
 
 const getUsers = async () => {
-    await new Promise((resolve) => setTimeout(resolve, 500));
-    const response = await fetch("https://randomuser.me/api");
+    await new Promise((resolve) => setTimeout(resolve, 500)); // Waiting time to make user doesn't spam fetch request causing fetch request to data to be undefined
+    const response = await fetch("https://randomuser.me/api"); // Makes a get request to API
     if (!response.ok) {
-      console.log("Error encountered: ", response.status);
+      console.log("Error encountered: ", response.status);  // Logs error in console if response is not OK
     }
-    return await response.json();
+    return await response.json(); // response gets parsed as JSON and returned as JS object to be used in query
   }
  
 export default UserProfile;
