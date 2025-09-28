@@ -17,7 +17,7 @@ function Home() {
            <h1>User Randomizer</h1>
         </div>
         <div className="dev-name">
-            <h3>Denzel Mabilangan</h3>
+            <h2>Denzel Mabilangan</h2>
         </div>
     </div>
 

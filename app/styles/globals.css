@@ -1,7 +1,10 @@
 :root {
   --background: #fff;
   --text-color: #000;
-  --accent: #fb0;
+  --gold-accent: #fb0;
+  --light-accent: #DDDDDD;
+  --dark-accent: #3C3C3C;
+
 }
 
 
@@ -32,7 +35,7 @@ p {
 
 .header-nav {
   height: 100px;
-  background-color: var(--accent);
+  background-color: var(--gold-accent);
   display: flex;
   justify-content: space-between;
   align-items: center;

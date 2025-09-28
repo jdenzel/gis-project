@@ -1,5 +1,7 @@
 import "../styles/UserProfile.css"
 import { useQuery } from "@tanstack/react-query";
+import tigertoothgm from "../lib/images/tigertooth-gm.png";
+import Image from "next/image";
 
 function UserProfile() {
 
@@ -21,6 +23,7 @@ function UserProfile() {
     let dateFormat = `${dobMonth}-${dobDay}-${dobYear}`
     
     return (
+      <div className="profile-container">
         <div className="profile-section">
           <div className="profile-box">
             <div className="profile-left">
@@ -51,6 +54,8 @@ function UserProfile() {
             
           </div>
         </div>
+        <Image className="bg-img" src={tigertoothgm} alt="Tigertooth" />
+      </div>
       );  
     }
   }
