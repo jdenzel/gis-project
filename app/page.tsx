@@ -3,7 +3,7 @@ import "./styles/UserProfile.css";
 
 import UserProfile from "./components/UserProfile";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import TULogo from './lib/images/tu-logo.png'
+import TULogo from './lib/images/tu-logo-2.png'
 import Image from "next/image";
 
 
@@ -16,10 +16,11 @@ function Home() {
    <>
     <div className="header-nav">
         <div className="app-title">
-           <h1>TURandom</h1>
+           <h2>TURandom</h2>
         </div>
         <div className="logo">
-            <Image src={TULogo} alt='' width={300} height={100}/>
+            {/* <Image src={TULogo} alt='' width={300} height={100}/> */}
+            <Image src={TULogo} alt='' width={200} height={150}/>
         </div>
         <div className="dev-name">
             <h2>Denzel Mabilangan</h2>

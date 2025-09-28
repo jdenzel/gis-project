@@ -56,6 +56,7 @@ function UserProfile() {
             
           </div>
           <Image className="bg-img" src={tigertoothgm} alt="Tigertooth" width={1600} height={1000}/>
+          {/* <Image className="bg-img" src={tigertoothgm} alt="Tigertooth" fill={true} objectFit="cover"/> */}
         </div>
       </div>
       );  

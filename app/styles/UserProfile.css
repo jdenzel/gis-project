@@ -100,9 +100,9 @@
 }
 
 .bg-img {
-  position: absolute;
+  position: fixed;
   z-index: -1;
-  bottom: -130px;
+  top: -50px;
 }
 
 
@@ -122,16 +122,19 @@
 
   }
 
-    .profile-right {
-    box-shadow: none;
-
-  }
-
-  .profile-container {
-    /* box-shadow: 13px 22px 28px 0 rgba(0,0,0,.33); */
-  }
-
   .btn {
     position: unset;
+  }
+
+  .bg-img {
+    /* display: none; */
+  }
+}
+
+@media screen and (max-width:450px) {
+  .profile-right {
+    box-shadow: none;
+    max-width: 300px;
+    text-wrap: wrap;
   }
 }
