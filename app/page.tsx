@@ -1,10 +1,10 @@
-
-
 "use client";
-import "./styles.css/UserProfile.css"
+import "./styles/UserProfile.css";
 
 import UserProfile from "./components/UserProfile";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+
 
 function Home() {
 

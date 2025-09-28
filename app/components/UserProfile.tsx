@@ -1,4 +1,4 @@
-import "../styles.css/UserProfile.css"
+import "../styles/UserProfile.css"
 import { useQuery } from "@tanstack/react-query";
 
 function UserProfile() {
@@ -46,7 +46,7 @@ function UserProfile() {
                 <p>{dateFormat}</p>
               </div>
             </div>
-            
+
             <button className="btn" onClick={() => refetch()}>Fetch New User</button>
             
           </div>

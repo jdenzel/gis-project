@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import "./styles.css/globals.css";
+import "./styles/globals.css";
+import localFont from "next/font/local";
+
+const ProximaNova = localFont({
+  src: "./styles/fonts/Proxima Nova.ttf"
+});
 
 export const metadata: Metadata = {
   title: "GIS Project",
@@ -12,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={ProximaNova.className}>
       <body>
         {children}
       </body>
