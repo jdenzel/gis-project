@@ -3,7 +3,7 @@ import "./styles/UserProfile.css";
 
 import UserProfile from "./components/UserProfile";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import TULogo from './lib/images/tu-logo-2.png'
+import TULogo from '../public/lib/images/tu-logo-2.png'
 import Image from "next/image";
 
 

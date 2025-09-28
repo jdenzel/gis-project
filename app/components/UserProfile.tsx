@@ -1,8 +1,9 @@
 import "../styles/UserProfile.css"
 import { useQuery } from "@tanstack/react-query";
-import tigertoothgm from "../lib/images/tigertooth-gm.png";
+import tigertoothgm from "../../public/lib/images/tigertooth-gm.png";
 import Image from "next/image";
 import Loader from "./Loader";
+
 
 function UserProfile() {
 

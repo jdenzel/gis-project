@@ -1,5 +1,5 @@
 "use client";
-import tigerLottie from "../lib/lottie/tiger-lottie.json"
+import tigerLottie from "../../public/lib/lottie/tiger-lottie.json"
 import { useLottie } from "lottie-react";
 import "../styles/Loader.css"
 
