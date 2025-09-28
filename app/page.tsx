@@ -6,8 +6,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import TULogo from '../public/lib/images/tu-logo-2.png'
 import Image from "next/image";
 
-
-
 function Home() {
 
   const queryClient = new QueryClient(); 

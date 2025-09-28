@@ -4,7 +4,6 @@ import tigertoothgm from "../../public/lib/images/tigertooth-gm.png";
 import Image from "next/image";
 import Loader from "./Loader";
 
-
 function UserProfile() {
 
   const {data, isFetching, refetch} = useQuery({
@@ -53,7 +52,7 @@ function UserProfile() {
               </div>
             </div>  
 
-            <button className="btn" onClick={() => refetch()}>Fetch User</button>
+            <button className="btn" onClick={() => refetch()}>Fetch New Profile</button>
             
           </div>
           <Image className="bg-img" src={tigertoothgm} alt="Tigertooth" width={1600} height={1000}/>
