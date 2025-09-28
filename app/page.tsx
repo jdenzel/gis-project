@@ -16,7 +16,7 @@ function Home() {
    <>
     <div className="header-nav">
         <div className="app-title">
-           <h1>User Randomizer</h1>
+           <h1>TURandom</h1>
         </div>
         <div className="logo">
             <Image src={TULogo} alt='' width={300} height={100}/>

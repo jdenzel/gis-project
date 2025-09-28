@@ -39,7 +39,7 @@ function UserProfile() {
                   <h3 className="info-title">Address</h3>
 
                   <p>{location.street.number} {location.street.name}, {location.city}, {location.state} {location.postcode}</p>
-                  <h3 className="info-title">Email:</h3>
+                  <h3 className="info-title">Email</h3>
 
                   <p>{email}</p>
 
@@ -52,7 +52,7 @@ function UserProfile() {
               </div>
             </div>  
 
-            <button className="btn" onClick={() => refetch()}>Fetch New User</button>
+            <button className="btn" onClick={() => refetch()}>Fetch User</button>
             
           </div>
           <Image className="bg-img" src={tigertoothgm} alt="Tigertooth" width={1600} height={1000}/>
