@@ -13,11 +13,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  gap: 90px;
 }
 
 .info-title {
   color: var(--text-color);
+  position: relative;
+}
+
+.info-title::after {
+  display: absolute;
+  content: "";
+  width: 10px;
+  background-color: white;
+
 }
 
 .profile-info h3 {
@@ -29,16 +38,18 @@
   height: auto;
   display: flex;
   justify-content: center;
+  align-self: flex-start;
   /* align-self: flex-start; */
   box-shadow: 13px 22px 28px 0 rgba(0,0,0,.33);
-  background-color: black;
-  padding: 0 10px;
+  background-color: var(--dark-accent);
+  /* background-color: transparent; */
+  padding: 10 10px;
 }
 
 .profile-left img {
-  margin-top: 10px;
   width: auto;
   height: 250px;
+  border: 2px solid var(--gold-accent);
 }
 
 .profile-right {
@@ -47,8 +58,8 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: auto;
-  height: auto;
+  width: 400px;
+  height: 600px;
   max-width: 450px;
   box-shadow: 13px 22px 28px 0 rgba(0,0,0,.33)
 }
@@ -56,15 +67,16 @@
 .btn {
   position: absolute;
   border: none;
-  border-radius: 20px;
   padding: 10px 20px; 
   align-self: center;
   background-color: #fb0;
+  font-size: 18px;
   font-weight: 700;
   color: black;
   bottom: 10px;
-  left: 65px;
+  left: 50px;
   margin-bottom: 20px;
+  box-shadow: 13px 10px 15px 0 rgba(0,0,0,.33);
 }
 
 .bg-img {
@@ -89,6 +101,7 @@
     margin-right: auto;
 
   }
+
     .profile-right {
     box-shadow: none;
 

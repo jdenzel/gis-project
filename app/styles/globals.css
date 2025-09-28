@@ -10,7 +10,7 @@
 
 body {
   background: var(--background);
-  color: var(--text-color);
+  color: white;
   font-family: var(--proxima-nova);
   margin: 0;
 }
@@ -27,17 +27,21 @@ h2 {
 h3 {
   font-size: 25px;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 p {
   font-size: 20px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .header-nav {
   height: 100px;
-  background-color: var(--gold-accent);
+  background-color: black;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0 50px;
 }
+
+
