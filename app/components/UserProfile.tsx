@@ -6,7 +6,7 @@ import Loader from "./Loader";
 
 function UserProfile() {
 
-  const {data, isFetching, error, refetch} = useQuery({
+  const {data, isFetching, refetch} = useQuery({
     queryKey: ['users'],
     queryFn: getUsers,
     refetchOnWindowFocus: false,
