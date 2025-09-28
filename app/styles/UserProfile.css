@@ -16,13 +16,6 @@
   gap: 90px;
 }
 
-.info-title {
-  font-family: var(--kandal-book);
-  color: var(--text-color);
-  position: relative;
-}
-
-
 .profile-info h3 {
   margin: 0px 0px 10px 0px;
 }
@@ -32,16 +25,27 @@
   
 }
 
+.info-title {
+  font-family: var(--kandal-book);
+  color: var(--text-color);
+  display: inline-block;
+}
+
+.info-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 1px solid white;
+}
+
 .profile-left {
   width: auto;
   height: auto;
   display: flex;
   justify-content: center;
   align-self: flex-start;
-  /* align-self: flex-start; */
   box-shadow: 13px 22px 28px 0 rgba(0,0,0,.33);
   background-color: var(--dark-accent);
-  /* background-color: transparent; */
   padding: 10 10px;
 }
 
@@ -56,11 +60,13 @@
   color: var(--text-color);
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 40px;
   width: 400px;
-  height: 600px;
+  height: 500px;
   max-width: 450px;
-  box-shadow: 13px 22px 28px 0 rgba(0,0,0,.33)
+  box-shadow: 13px 22px 28px 0 rgba(0,0,0,.33);
+  clip-path: polygon(30% 0%, 94% 0, 100% 6%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);
+
 }
 
 .btn {
