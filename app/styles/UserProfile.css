@@ -16,28 +16,6 @@
   gap: 90px;
 }
 
-.profile-info h3 {
-  margin: 0px 0px 10px 0px;
-}
-
-.profile-info p {
-  margin: 0px 0px 25px 10px;
-  
-}
-
-.info-title {
-  font-family: var(--kandal-book);
-  color: var(--text-color);
-  display: inline-block;
-}
-
-.info-title::after {
-  content: "";
-  display: block;
-  width: 100%;
-  border-top: 1px solid white;
-}
-
 .profile-left {
   width: auto;
   height: auto;
@@ -60,13 +38,44 @@
   color: var(--text-color);
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 20px;
   width: 400px;
-  height: 500px;
+  height: 600px;
   max-width: 450px;
-  box-shadow: 13px 22px 28px 0 rgba(0,0,0,.33);
   clip-path: polygon(30% 0%, 94% 0, 100% 6%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);
+}
 
+.profile-right-container {
+  display: inline-block;
+  box-shadow: -13px 22px 20px rgba(0,0,0,.33);
+}
+
+.profile-info {
+  padding: 40px 15px;
+  height: 100%;
+  border: 5px solid var(--dark-accent)
+}
+
+.profile-info h3 {
+  margin: 0px 0px 10px 0px;
+}
+
+.profile-info p {
+  margin: 0px 0px 25px 10px;
+  
+}
+
+.info-title {
+  font-family: var(--kandal-book);
+  color: var(--text-color);
+  display: inline-block;
+}
+
+.info-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 2px solid white;
 }
 
 .btn {

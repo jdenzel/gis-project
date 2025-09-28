@@ -30,31 +30,32 @@ function UserProfile() {
               <img src={picture.large} />
             </div>
               
-            <div className="profile-right">
-              <div className="profile-info">
-                <h3 className="info-title">Name</h3>
-                <p>{name.first} {name.last}</p>
+            <div className="profile-right-container">
+              <div className="profile-right">
+                <div className="profile-info">
+                  <h3 className="info-title">Name</h3>
+                  <p>{name.first} {name.last}</p>
 
-                <h3 className="info-title">Address</h3>
+                  <h3 className="info-title">Address</h3>
 
-                <p>{location.street.number} {location.street.name}, {location.city}, {location.state} {location.postcode}</p>
-                <h3 className="info-title">Email:</h3>
+                  <p>{location.street.number} {location.street.name}, {location.city}, {location.state} {location.postcode}</p>
+                  <h3 className="info-title">Email:</h3>
 
-                <p>{email}</p>
+                  <p>{email}</p>
 
-                <h3 className="info-title">Phone Number</h3>
-                <p>{phone}</p>
+                  <h3 className="info-title">Phone Number</h3>
+                  <p>{phone}</p>
 
-                <h3 className="info-title">Date of Birth</h3>
-                <p>{dateFormat}</p>
+                  <h3 className="info-title">Date of Birth</h3>
+                  <p>{dateFormat}</p>
+                </div>
               </div>
-            </div>
+            </div>  
 
             <button className="btn" onClick={() => refetch()}>Fetch New User</button>
             
           </div>
-          <Image className="bg-img" src={tigertoothgm} alt="Tigertooth" width={1600}
-  height={1000}/>
+          <Image className="bg-img" src={tigertoothgm} alt="Tigertooth" width={1600} height={1000}/>
         </div>
       </div>
       );  
