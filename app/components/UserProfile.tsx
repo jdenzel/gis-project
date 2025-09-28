@@ -6,7 +6,7 @@ import Loader from "./Loader";
 
 function UserProfile() {
 
-  const {data, isFetching, refetch} = useQuery({
+  const {data, isFetching, error, refetch} = useQuery({
     queryKey: ['users'],
     queryFn: getUsers,
     refetchOnWindowFocus: false,
@@ -65,6 +65,9 @@ function UserProfile() {
 const getUsers = async () => {
     await new Promise((resolve) => setTimeout(resolve, 500));
     const response = await fetch("https://randomuser.me/api");
+    if (!response.ok) {
+      console.log("Error encountered: ", response.status);
+    }
     return await response.json();
   }
  

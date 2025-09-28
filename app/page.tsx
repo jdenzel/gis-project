@@ -12,6 +12,8 @@ function Home() {
 
   const queryClient = new QueryClient();
 
+  
+
   return (
    <>
     <div className="header-nav">
@@ -19,8 +21,7 @@ function Home() {
            <h2>TURandom</h2>
         </div>
         <div className="logo">
-            {/* <Image src={TULogo} alt='' width={300} height={100}/> */}
-            <Image src={TULogo} alt='' width={200} height={150}/>
+            <Image src={TULogo} alt='' width={200} height={150}/> 
         </div>
         <div className="dev-name">
             <h2>Denzel Mabilangan</h2>
