@@ -1,6 +1,7 @@
 "use client";
 import tigerLottie from "../lib/lottie/tiger-lottie.json"
 import { useLottie } from "lottie-react";
+import "../styles/Loader.css"
 
 function Loader() {
 

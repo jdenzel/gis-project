@@ -6,13 +6,13 @@ import Loader from "./Loader";
 
 function UserProfile() {
 
-  const {data, isLoading, refetch} = useQuery({
+  const {data, isFetching, refetch} = useQuery({
     queryKey: ['users'],
     queryFn: getUsers,
     refetchOnWindowFocus: false,
   })
 
-  if(isLoading) {
+  if(isFetching) {
       return <Loader />
   } else {
 
@@ -52,8 +52,6 @@ function UserProfile() {
               </div>
             </div>  
 
-            {/* <Loader /> */}
-
             <button className="btn" onClick={() => refetch()}>Fetch User</button>
             
           </div>
@@ -65,7 +63,7 @@ function UserProfile() {
   }
 
 const getUsers = async () => {
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    await new Promise((resolve) => setTimeout(resolve, 500));
     const response = await fetch("https://randomuser.me/api");
     return await response.json();
   }
