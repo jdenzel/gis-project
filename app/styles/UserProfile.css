@@ -1,6 +1,6 @@
 .profile-container {
-  position: relative;
   margin-top: 100px;
+  position: relative;
 }
 
 .profile-section {
@@ -63,17 +63,18 @@
   font-weight: 700;
   color: black;
   bottom: 10px;
-  left: 70px;
+  left: 65px;
   margin-bottom: 20px;
 }
 
 .bg-img {
   position: absolute;
+  z-index: -1;
+  bottom: -130px;
 }
 
 
-
-@media screen and (max-width:750px) {
+@media screen and (max-width:800px) {
   .profile-section {
     margin-top: 50px;
   }

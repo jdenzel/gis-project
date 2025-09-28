@@ -53,8 +53,9 @@ function UserProfile() {
             <button className="btn" onClick={() => refetch()}>Fetch New User</button>
             
           </div>
+          <Image className="bg-img" src={tigertoothgm} alt="Tigertooth" width={1600}
+  height={1000}/>
         </div>
-        <Image className="bg-img" src={tigertoothgm} alt="Tigertooth" />
       </div>
       );  
     }
