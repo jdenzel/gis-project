@@ -34,7 +34,7 @@ function UserProfile() {
 
                 <h3 className="info-title">Address</h3>
 
-                <p>{location.street.number} {location.street.name} {location.city} {location.state} {location.postcode}</p>
+                <p>{location.street.number} {location.street.name}, {location.city}, {location.state} {location.postcode}</p>
                 <h3 className="info-title">Email:</h3>
 
                 <p>{email}</p>
