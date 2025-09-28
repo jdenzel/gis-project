@@ -46,6 +46,7 @@ function UserProfile() {
                 <p>{dateFormat}</p>
               </div>
             </div>
+            
             <button className="btn" onClick={() => refetch()}>Fetch New User</button>
             
           </div>
